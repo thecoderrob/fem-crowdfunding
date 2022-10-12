@@ -200,6 +200,7 @@ svg {
 .title {
   font-weight: var(--fw-bold);
   color: var(--clr-neutral-900);
+  transition: color 250ms ease-in-out;
 }
 
 /* ========
@@ -568,6 +569,7 @@ dialog::backdrop {
   font-weight: var(--fw-bold);
   border: 0;
   border-radius: 100vmax;
+  transition: background-color 250ms ease-in-out;
 }
 
 .cta:disabled {
@@ -667,6 +669,7 @@ input[type="number"] {
   font-weight: var(--fw-bold);
   border: 1px solid var(--clr-neutral-300);
   border-radius: 100vmax;
+  transition: outline 250ms ease-in-out;
 }
 
 .pledge-form input[type="number"]:where(:hover, :focus-visible) {
