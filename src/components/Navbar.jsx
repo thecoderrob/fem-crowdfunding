@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="container--nav | container flex">
       <div>
-        <img src="/src/assets/logo.svg" alt="" />
+        <img src="/assets/logo.svg" alt="" />
       </div>
 
       <button

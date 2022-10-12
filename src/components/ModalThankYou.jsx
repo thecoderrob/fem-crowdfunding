@@ -7,7 +7,7 @@ const ModalThankYou = () => {
   return (
     <dialog id="modal-thank-you">
       <div className="container--m-thank-you | container">
-        <img src="/src/assets/icon-check.svg" alt="" />
+        <img src="/assets/icon-check.svg" alt="" />
         <h2 className="fs-700 title">Thanks for your support!</h2>
         <p>
           Your pledge brings us one step closer to sharing Mastercraft Bamboo

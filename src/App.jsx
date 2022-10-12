@@ -24,7 +24,7 @@ function App() {
 
       <main className="flow">
         <div className="container--main-header | container grid">
-          <img src="/src/assets/logo-mastercraft.svg" alt="" />
+          <img src="/assets/logo-mastercraft.svg" alt="" />
 
           <div className="text | flow">
             <h1 className="fs-800 title">Mastercraft Bamboo Monitor Riser</h1>
