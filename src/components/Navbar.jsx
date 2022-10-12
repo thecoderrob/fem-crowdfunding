@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
+import logo from "../assets/logo.svg";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="container--nav | container flex">
       <div>
-        <img src="/assets/logo.svg" alt="" />
+        <img src={logo} alt="" />
       </div>
 
       <button
