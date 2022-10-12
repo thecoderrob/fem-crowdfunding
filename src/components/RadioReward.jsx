@@ -12,19 +12,13 @@ const RadioReward = ({
   desc,
   itemsLeft,
 }) => {
-  const { pledge, setPledge } = useGlobalContext();
+  const { pledge, setPledge, openThankYouModal } = useGlobalContext();
 
   const handleSelect = (id) => {
     const selected = rewards.find((reward) => reward.id === id);
     if (selected.itemsLeft < 1) return;
 
     setSelectedReward(id);
-  };
-
-  const openThankYouModal = () => {
-    const modalThankYou = document.querySelector("#modal-thank-you");
-
-    modalThankYou.showModal();
   };
 
   return (

@@ -46,6 +46,7 @@ const ModalBackProject = ({ rewards, selectedReward, setSelectedReward }) => {
                 type="number"
                 name=""
                 id="pledge"
+                value={pledge}
                 onChange={(e) => setPledge(e.target.value)}
               />
               <button
@@ -62,6 +63,7 @@ const ModalBackProject = ({ rewards, selectedReward, setSelectedReward }) => {
         {rewards.map((reward) => {
           return (
             <RadioReward
+              key={reward.id}
               {...reward}
               rewards={rewards}
               selectedReward={selectedReward}

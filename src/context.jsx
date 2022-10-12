@@ -4,7 +4,7 @@ import { data } from "./data";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [pledge, setPledge] = useState(null);
+  const [pledge, setPledge] = useState(0);
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [rewards, setRewards] = useState(data);
   const [selectedReward, setSelectedReward] = useState(null);
@@ -22,6 +22,7 @@ const AppProvider = ({ children }) => {
   const openThankYouModal = () => {
     const modal = document.querySelector("#modal-thank-you");
 
+    closeBackProjectModal();
     modal.showModal();
   };
   const closeThankYouModal = () => {

@@ -247,6 +247,8 @@ header {
   position: relative;
   justify-content: space-between;
   align-items: center;
+  max-width: 70em;
+  margin-inline: auto;
 }
 
 .mobile-nav-toggle {
@@ -296,6 +298,7 @@ header {
     right: 1.5rem;
     border-radius: 0.5rem;
     background-color: var(--clr-neutral-100);
+    box-shadow: 0 1em 1em rgb(0 0 0 / 0.25);
   }
 
   .primary-nav ul {
@@ -422,9 +425,12 @@ main {
 dialog {
   border: 0;
   background: transparent;
-  width: 100%;
-  margin: auto;
   color: var(--clr-neutral-500);
+}
+
+#modal-thank-you,
+#modal-back-this-project {
+  margin: auto;
 }
 
 dialog::backdrop {
@@ -466,10 +472,6 @@ dialog::backdrop {
   border: 1px solid var(--clr-neutral-300);
   border-radius: 0.5rem;
 }
-
-/* .grid-container > * {
-  border: 1px solid blue;
-} */
 
 .grid-container--reward {
   cursor: pointer;
